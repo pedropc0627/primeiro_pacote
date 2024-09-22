@@ -1,0 +1,11 @@
+Package: primeiro_pacote
+Type: Package
+Title: Teste
+Version: 0.1
+Author: Pedro
+Maintainer: Pedro
+  Description: Um pacote para realizar análises de regressão linear.
+Suggests: roxygen2
+License: MIT
+RoxygenNote: 7.3.2
+Encoding: UTF-8

@@ -1,0 +1,21 @@
+---
+title: "primeiro_pacote"
+author: "Pedro"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+# primeiro_pacote
+
+Um pacote para realizar análises de regressão linear de forma flexível e simples.
+
+## Instalação
+
+Para instalar o pacote diretamente do GitHub, use o seguinte comando:
+
+```r
+# Instale o devtools se ainda não o tiver
+install.packages("devtools")
+
+# Instale primeiro_pacote
+devtools::install_github("seu_usuario/primeiro_pacote")
