@@ -4,7 +4,7 @@
 \alias{linear_regression}
 \title{Regressão Linear}
 \usage{
-linear_regression(data, resposta, preditor)
+linear_regression(data, resposta, preditor, conf.level = 0.95)
 }
 \arguments{
 \item{data}{Dataframe.}
@@ -12,9 +12,11 @@ linear_regression(data, resposta, preditor)
 \item{resposta}{Nome da coluna de variável resposta.}
 
 \item{preditor}{Lista de nomes das colunas de variáveis preditoras.}
+
+\item{conf.level}{Nível de confiança para os intervalos de confiança.}
 }
 \value{
-Um objeto com os coeficientes, resíduos e valores preditos.
+Um objeto com os coeficientes, resíduos, valores preditos, p-valores e intervalos de confiança.
 }
 \description{
 Ajusta um modelo de regressão linear.

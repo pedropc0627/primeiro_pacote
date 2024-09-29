@@ -2,6 +2,7 @@
 
 export(linear_regression)
 export(ola)
-export(plot_regression)
+export(plot_regression_predict)
+export(plot_regression_residuos)
 export(predict_new)
 export(simulated_data)
