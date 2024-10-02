@@ -8,6 +8,8 @@
 #' @param conf.level Nível de confiança para os intervalos de confiança.
 #' @return Um objeto com os coeficientes, resíduos, valores preditos, p-valores e intervalos de confiança.
 #' @name linear_regression
+#' @examples 
+#' modelo <- linear_regression(simulated_data, "Y", "X1", conf.level = 0.95)
 #' @export
 linear_regression <- function(data, resposta, preditor, conf.level = 0.95) {
   # Validações
