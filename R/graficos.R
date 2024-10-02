@@ -1,6 +1,10 @@
 #' Gráfico de Valores Preditos vs Resíduos
 #'
+#' Dado o modelo de regressão, a função plot_regression_residuos retorna o gráfico dos valores preditos pelo modelo no eixo X, e os resíduos no eixo y.
 #' @param model Resultado da função linear_regression.
+#' @examples 
+#' linear_regression(simulated_data, "Y", "X1", conf.level = 0.95)
+#' plot_regression_residuos(modelo)
 #' @export
 plot_regression_residuos <- function(model) {
   plot(model$predicted, model$residuals, 
@@ -11,7 +15,11 @@ plot_regression_residuos <- function(model) {
 
 #' Gráfico de Valores Reais vs Preditos
 #'
+#' Dado o modelo, a função plot_regression_predict retorna um gráfico com os dados reais no eixo X e os valores preditos no eixo y.
 #' @param model Resultado da função de regressão linear, contendo valores preditos e resíduos.
+#' @examples 
+#' linear_regression(simulated_data, "Y", "X1", conf.level = 0.95)
+#' plot_regression_predict(modelo)
 #' @export
 plot_regression_predict <- function(model) {
   # Calcular os valores reais a partir dos valores preditos e resíduos
@@ -29,6 +37,7 @@ plot_regression_predict <- function(model) {
 }
 #' Predição
 #'
+#' A função predict_new, dado seu modelo e novos dados, retorna a predição da variável resposta dadas as novas observações.
 #' @param model Resultado da função linear_regression.
 #' @param new_data Dataframe com novas observações.
 #' @return Valores preditos para as novas observações.
