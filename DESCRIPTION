@@ -1,12 +1,12 @@
-Package:primeiropacote
+Package: primeiropacote
 Type: Package
 Title: Teste
-Version: 0.1
+Version: 0.1.0
 Author: Pedro
-Maintainer:Pedro<pedropcabrini@gmail.com>
+Maintainer: Pedro <pedropcabrini@gmail.com>
 Description: Um pacote para realizar análises de regressão linear.
 Suggests: roxygen2
-License: MIT
+License: MIT + file LICENSE
 RoxygenNote: 7.3.2
 Encoding: UTF-8
 URL: https://github.com/pedropc0627/primeiro_pacote

@@ -2,13 +2,19 @@
 % Please edit documentation in R/graficos.R
 \name{plot_regression_residuos}
 \alias{plot_regression_residuos}
-\title{Gráfico de Valores Preditos vs Resíduos}
+\title{Grafico de Valores Preditos vs Residuos}
 \usage{
 plot_regression_residuos(model)
 }
 \arguments{
-\item{model}{Resultado da função linear_regression.}
+\item{model}{Resultado da funcao `linear_regression`, que deve incluir os valores preditos e residuos.}
 }
 \description{
-Gráfico de Valores Preditos vs Resíduos
+Dado o modelo de regressao, a funcao `plot_regression_residuos` retorna o grafico dos valores
+preditos pelo modelo no eixo X e os residuos no eixo Y. Esse grafico e util para diagnosticar
+a qualidade do ajuste do modelo.
+}
+\examples{
+modelo <- linear_regression(simulated_data, "Y", c("X1", "X2"), conf.level = 0.95)
+plot_regression_residuos(modelo)
 }

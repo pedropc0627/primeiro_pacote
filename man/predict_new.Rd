@@ -2,18 +2,26 @@
 % Please edit documentation in R/graficos.R
 \name{predict_new}
 \alias{predict_new}
-\title{Predição}
+\title{Predicao}
 \usage{
 predict_new(model, new_data)
 }
 \arguments{
-\item{model}{Resultado da função linear_regression.}
+\item{model}{Resultado da funcao `linear_regression`, que inclui os coeficientes ajustados.}
 
-\item{new_data}{Dataframe com novas observações.}
+\item{new_data}{Dataframe com novas observacoes, que deve ter as mesmas variaveis preditoras
+que foram usadas no modelo.}
 }
 \value{
-Valores preditos para as novas observações.
+Valores preditos para as novas observacoes.
 }
 \description{
-Predição
+A funcao `predict_new`, dado seu modelo e novos dados, retorna a predicao da variavel resposta
+para as novas observacoes.
+}
+\examples{
+modelo <- linear_regression(simulated_data, "Y", c("X1", "X2"), conf.level = 0.95)
+new_data <- data.frame(X1 = rnorm(5), X2 = rnorm(5))
+predicted_values <- predict_new(modelo, new_data)
+predicted_values  # Valores preditos para as novas observacoes
 }

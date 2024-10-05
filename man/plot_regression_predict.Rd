@@ -2,13 +2,19 @@
 % Please edit documentation in R/graficos.R
 \name{plot_regression_predict}
 \alias{plot_regression_predict}
-\title{Gráfico de Valores Reais vs Preditos}
+\title{Grafico de Valores Reais vs Preditos}
 \usage{
 plot_regression_predict(model)
 }
 \arguments{
-\item{model}{Resultado da função de regressão linear, contendo valores preditos e resíduos.}
+\item{model}{Resultado da funcao `linear_regression`, contendo valores preditos e residuos.}
 }
 \description{
-Gráfico de Valores Reais vs Preditos
+Dado o modelo, a funcao `plot_regression_predict` retorna um grafico com os dados reais no eixo
+X e os valores preditos no eixo Y. Esse grafico e util para visualizar a precisao do modelo de
+regressao.
+}
+\examples{
+modelo <- linear_regression(simulated_data, "Y", c("X1", "X2"), conf.level = 0.95)
+plot_regression_predict(modelo)
 }

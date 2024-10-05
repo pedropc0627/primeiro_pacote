@@ -7,8 +7,11 @@
 ola()
 }
 \value{
-Mensagem de Olá.
+Uma string contendo a mensagem "Hello, World!".
 }
 \description{
-Retorna Mensagem.
+Uma funcao simples que retorna uma mensagem de saudacao.
+}
+\examples{
+ola()  # Retorna "Hello, World!"
 }
